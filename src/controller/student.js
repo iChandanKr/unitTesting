@@ -28,6 +28,14 @@ class Student {
   getExternal(total) {
     return total + 1;
   }
+
+  dbData(){
+    return new Promise((resolve,reject)=>{
+      setTimeout(() => {
+        resolve(10);
+      }, 1000);
+    })
+  }
 }
 
 module.exports = Student;
