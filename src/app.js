@@ -6,7 +6,7 @@ const port = 4200;
 //     res.send('hello')
 // })
 
-
+// app.use(express.json())
 
 app.use('/',userRouter)
 app.listen(port,()=>{
