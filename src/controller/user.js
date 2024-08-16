@@ -21,7 +21,6 @@ const userList = async (req, res) => {
 // userList()
 module.exports = {
   userList,
-  fetchUsersFromAPI
 };
 
 // "test-2": "jest \"src/test2/mockAndResolve.test.js\""
