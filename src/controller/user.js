@@ -1,11 +1,11 @@
 const axios = require("axios");
-// const { fetchUsersFromAPI } = require("../services/fetchUser");
+const { fetchUsersFromAPI } = require("../services/fetchUser");
 const apiUrl = 'https://jsonplaceholder.typicode.com/users';
-const fetchUsersFromAPI = async (url) => {
-  const response = await axios.get(url);
-  // console.log(response.data)
-  return response.data;
-};
+// const fetchUsersFromAPI = async (url) => {
+//   const response = await axios.get(url);
+//   // console.log(response.data)
+//   return response.data;
+// };
 
 
 const userList = async (req, res) => {
@@ -18,10 +18,10 @@ const userList = async (req, res) => {
   }
 };
 
-userList()
+// userList()
 module.exports = {
   userList,
-  fetchUsersFromAPI
+  // fetchUsersFromAPI
 };
 
 // "test-2": "jest \"src/test2/mockAndResolve.test.js\""
